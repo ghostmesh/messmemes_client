@@ -1,0 +1,180 @@
+<!-- Файл: client/public/terms.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MessMemes — Terms of Use</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #eee;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 40px;
+    }
+    h1 { font-size: 1.8em; margin-bottom: 8px; color: #ffd200; }
+    .updated { font-size: 0.85em; opacity: 0.5; margin-bottom: 32px; }
+    h2 { font-size: 1.2em; margin: 24px 0 10px; color: #f7971e; }
+    h3 { font-size: 1em; margin: 16px 0 8px; color: #ffd200; }
+    p, li { line-height: 1.6; opacity: 0.85; margin-bottom: 8px; }
+    ul { margin: 8px 0 16px 20px; opacity: 0.85; }
+    a { color: #ffd200; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .back { display: inline-block; margin-bottom: 24px; color: rgba(255,255,255,0.5); font-size: 0.9em; }
+    .back:hover { color: #fff; }
+    .important { background: rgba(247, 151, 30, 0.1); border-left: 3px solid #f7971e; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+    .lang-switch { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 20px; }
+    .lang-btn { padding: 4px 10px; background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; cursor: pointer; font-size: 0.8em; font-family: inherit; transition: all 0.2s; }
+    .lang-btn.active { background: rgba(247,151,30,0.2); border-color: #f7971e; color: #ffd200; }
+    .lang-btn:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="javascript:history.back()" class="back"><span class="t" data-key="back">← Back to game</span></a>
+    
+    <div class="lang-switch">
+      <button class="lang-btn" onclick="setLang('ru')">RU</button>
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    </div>
+    
+    <h1 class="t" data-key="title">📋 MessMemes Terms of Use</h1>
+    <p class="updated t" data-key="updated">Last updated: August 7, 2026</p>
+
+    <h2 class="t" data-key="s1_title">1. General Provisions</h2>
+    <div class="t" data-key="s1_text"></div>
+
+    <h2 class="t" data-key="s2_title">2. Service Description</h2>
+    <div class="t" data-key="s2_text"></div>
+
+    <h2 class="t" data-key="s3_title">3. Technical Intermediary Status</h2>
+    <div class="important t" data-key="s3_text"></div>
+
+    <h2 class="t" data-key="s4_title">4. User Content (UGC)</h2>
+    <div class="t" data-key="s4_text"></div>
+
+    <h2 class="t" data-key="s5_title">5. Prohibited Actions</h2>
+    <div class="t" data-key="s5_text"></div>
+
+    <h2 class="t" data-key="s6_title">6. Intellectual Property</h2>
+    <div class="t" data-key="s6_text"></div>
+
+    <h2 class="t" data-key="s7_title">7. Disclaimer</h2>
+    <div class="t" data-key="s7_text"></div>
+
+    <h2 class="t" data-key="s8_title">8. Complaint Procedure</h2>
+    <div class="t" data-key="s8_text"></div>
+
+    <h2 class="t" data-key="s9_title">9. Room Reports</h2>
+    <div class="t" data-key="s9_text"></div>
+
+    <h2 class="t" data-key="s10_title">10. Termination of Access</h2>
+    <div class="t" data-key="s10_text"></div>
+
+    <h2 class="t" data-key="s11_title">11. Changes to Terms</h2>
+    <div class="t" data-key="s11_text"></div>
+
+    <h2 class="t" data-key="s12_title">12. Governing Law</h2>
+    <div class="t" data-key="s12_text"></div>
+
+    <h2 class="t" data-key="s13_title">13. Contacts</h2>
+    <p><a class="contact-email" href="mailto:legal@messmemes.com">legal@messmemes.com</a></p>
+  </div>
+
+  <script>
+    const EMAIL_LEGAL = 'legal@messmemes.com';
+    
+    const translations = {
+      ru: {
+        back: '← Назад к игре',
+        title: '📋 Условия использования MessMemes',
+        updated: 'Последнее обновление: 7 августа 2026',
+        s1_title: '1. Общие положения',
+        s1_text: `<p>1.1. Настоящие Условия использования регулируют отношения между пользователем и администрацией многопользовательской браузерной игры MessMemes.</p><p>1.2. Используя Сервис, вы соглашаетесь с настоящими Условиями в полном объёме.</p><p>1.3. Сервис предназначен для лиц, достигших 13 лет. Пользователи младше 13 лет могут использовать Сервис только с согласия родителей или законных представителей.</p><p>1.4. Если вы не согласны с каким-либо пунктом Условий, вы должны прекратить использование Сервиса.</p>`,
+        s2_title: '2. Описание Сервиса',
+        s2_text: `<p>2.1. MessMemes — многопользовательская браузерная игра, в которой игроки получают текстовые ситуации и выбирают наиболее подходящие мемы-картинки. Взаимодействие происходит в реальном времени через технологию WebSocket.</p><p>2.2. Игра не требует регистрации, не запрашивает email, номер телефона или другие персональные данные. Пользователь указывает только игровое имя (псевдоним).</p>`,
+        s3_title: '3. Статус технического посредника',
+        s3_text: `<p>MessMemes является техническим посредником. Мы НЕ храним, НЕ кешируем и НЕ загружаем на свои серверы изображения или тексты, на которые указывают ссылки пользователей. Отображение картинки происходит путём прямой подгрузки по указанному URL на стороне клиента (браузера пользователя).</p><p>Администрация не контролирует содержание внешних ресурсов и не несёт ответственности за их контент, доступность или безопасность. Все ссылки предоставляются пользователями самостоятельно.</p>`,
+        s4_title: '4. Контент пользователей (UGC)',
+        s4_text: `<p>4.1. Загружая ссылки на мемы через функцию «Свой пак», пользователь гарантирует, что:</p><ul><li>Имеет все необходимые права на использование указанных ссылок</li><li>Ссылки не ведут на запрещённый контент (экстремистские материалы, порнография, сцены насилия, пропаганда наркотиков, оскорбления, клевета)</li><li>Ссылки не нарушают авторские права третьих лиц</li><li>Осознаёт, что указанные ссылки будут видны другим игрокам в комнате</li></ul><p>4.2. При обнаружении нарушения:</p><ul><li>Пользователь может быть заблокирован без предупреждения</li><li>Сессия нарушителя прерывается немедленно</li><li>Комната может быть закрыта при получении нескольких жалоб</li></ul>`,
+        s5_title: '5. Запрещённые действия',
+        s5_text: `<p>Пользователю запрещается:</p><ul><li>Использовать оскорбительные, непристойные или дискриминационные игровые имена</li><li>Загружать ссылки на вредоносное ПО, вирусы, фишинговые сайты</li><li>Использовать читы, ботов, автоматизированные скрипты</li><li>Создавать несколько аккаунтов для накрутки голосов</li><li>Препятствовать нормальной работе Сервиса</li><li>Пытаться взломать или обойти ограничения Сервиса</li><li>Совершать действия, нарушающие законодательство РФ, ЕС или США</li></ul>`,
+        s6_title: '6. Интеллектуальная собственность',
+        s6_text: `<p>6.1. Администрации Сервиса принадлежат: логотип, дизайн интерфейса, исходный код (CSS, JavaScript), название игры.</p><p>6.2. Пользовательские ссылки на внешний контент принадлежат их законным владельцам.</p><p>6.3. Стандартные паки мемов (включая пак «Кукушка») являются интеллектуальной собственностью администрации Сервиса или используются по соответствующей лицензии.</p>`,
+        s7_title: '7. Отказ от ответственности',
+        s7_text: `<p>7.1. Сервис предоставляется «как есть» (AS IS) без каких-либо гарантий.</p><p>7.2. Администрация не гарантирует бесперебойную работу Сервиса, отсутствие ошибок или задержек.</p><p>7.3. Администрация не несёт ответственности за: содержание внешних ресурсов, действия других пользователей, потерю игрового прогресса, любой ущерб.</p>`,
+        s8_title: '8. Процедура жалоб',
+        s8_text: `<p>8.1. Для подачи жалобы направьте обращение на <a href="mailto:legal@messmemes.com">legal@messmemes.com</a>.</p><p>8.2. Срок реакции на жалобу: до 24 часов.</p><p>8.3. При обоснованной жалобе администрация вправе заблокировать доступ.</p>`,
+        s9_title: '9. Жалобы на комнаты',
+        s9_text: `<p>9.1. Любой игрок может пожаловаться на комнату через кнопку «Пожаловаться» в интерфейсе игры.</p><p>9.2. При получении жалоб: 1-я — предупреждение, 2-я — второе предупреждение, 3-я — комната автоматически закрывается.</p>`,
+        s10_title: '10. Прекращение доступа',
+        s10_text: `<p>10.1. Администрация оставляет за собой право приостановить или прекратить доступ пользователя к Сервису в любое время без предварительного уведомления.</p><p>10.2. При нарушении настоящих Условий доступ может быть прекращён бессрочно.</p>`,
+        s11_title: '11. Изменение условий',
+        s11_text: `<p>11.1. Администрация оставляет за собой право изменять настоящие Условия в любое время.</p><p>11.2. Актуальная версия всегда доступна по адресу /terms.</p><p>11.3. Продолжение использования Сервиса после изменений означает согласие с новыми Условиями.</p>`,
+        s12_title: '12. Применимое право',
+        s12_text: `<p>12.1. Настоящие Условия регулируются законодательством страны, на территории которой физически расположен сервер.</p>`,
+        s13_title: '13. Контакты',
+      },
+      en: {
+        back: '← Back to game',
+        title: '📋 MessMemes Terms of Use',
+        updated: 'Last updated: August 7, 2026',
+        s1_title: '1. General Provisions',
+        s1_text: `<p>1.1. These Terms of Use govern the relationship between the user and the administration of the multiplayer browser game MessMemes.</p><p>1.2. By using the Service, you agree to these Terms in full.</p><p>1.3. The Service is intended for persons aged 13 years and older. Users under 13 may use the Service only with parental consent.</p><p>1.4. If you do not agree with any provision, you must stop using the Service.</p>`,
+        s2_title: '2. Service Description',
+        s2_text: `<p>2.1. MessMemes is a multiplayer browser game where players receive text situations and choose the most suitable meme images. Interaction occurs via WebSocket.</p><p>2.2. The game does not require registration, email, or phone number. Only a game name (pseudonym) is used.</p>`,
+        s3_title: '3. Technical Intermediary Status',
+        s3_text: `<p>MessMemes acts as a technical intermediary. We DO NOT store, cache, or upload images or texts referenced by user-provided links. Images are displayed by direct loading from the specified URL on the client side.</p><p>The administration does not control external resources and is not responsible for their content, availability, or safety.</p>`,
+        s4_title: '4. User Content (UGC)',
+        s4_text: `<p>4.1. By uploading meme links through the "Custom Pack" feature, the user guarantees:</p><ul><li>They have all necessary rights to use the specified links</li><li>Links do not lead to prohibited content</li><li>Links do not infringe third-party copyrights</li><li>They understand the links will be visible to other players</li></ul><p>4.2. Upon violation: user may be blocked without warning, session terminated immediately, room may be closed.</p>`,
+        s5_title: '5. Prohibited Actions',
+        s5_text: `<p>Prohibited:</p><ul><li>Offensive, obscene, or discriminatory names</li><li>Links to malware, viruses, phishing sites</li><li>Cheats, bots, automated scripts</li><li>Multiple accounts to rig votes</li><li>Interfering with Service operation</li><li>Hacking or bypassing restrictions</li><li>Violating laws of RF, EU, or USA</li></ul>`,
+        s6_title: '6. Intellectual Property',
+        s6_text: `<p>6.1. The administration owns: logo, interface design, source code, game name.</p><p>6.2. User-provided links belong to their rightful owners.</p><p>6.3. Standard meme packs are the administration's property or used under license.</p>`,
+        s7_title: '7. Disclaimer',
+        s7_text: `<p>7.1. The Service is provided "AS IS" without any warranties.</p><p>7.2. The administration does not guarantee uninterrupted operation.</p><p>7.3. Not responsible for: external content, user actions, lost progress, any damages.</p>`,
+        s8_title: '8. Complaint Procedure',
+        s8_text: `<p>8.1. Submit complaints to <a href="mailto:legal@messmemes.com">legal@messmemes.com</a>.</p><p>8.2. Response time: up to 24 hours.</p><p>8.3. Administration may block access upon justified complaint.</p>`,
+        s9_title: '9. Room Reports',
+        s9_text: `<p>9.1. Any player can report a room via the "Report" button.</p><p>9.2. Reports: 1st — warning, 2nd — second warning, 3rd — room auto-closes.</p>`,
+        s10_title: '10. Termination of Access',
+        s10_text: `<p>10.1. Administration may suspend or terminate access at any time without notice.</p><p>10.2. Violation may result in indefinite termination.</p>`,
+        s11_title: '11. Changes to Terms',
+        s11_text: `<p>11.1. Terms may be changed at any time.</p><p>11.2. Current version always at /terms.</p><p>11.3. Continued use means acceptance of new Terms.</p>`,
+        s12_title: '12. Governing Law',
+        s12_text: `<p>12.1. These Terms are governed by the laws of the country where the server is physically located.</p>`,
+        s13_title: '13. Contacts',
+      }
+    };
+
+    function setLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+      
+      document.querySelectorAll('.t[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+      
+      document.querySelectorAll('.contact-email').forEach(el => {
+        el.href = `mailto:${EMAIL_LEGAL}`;
+        el.textContent = EMAIL_LEGAL;
+      });
+    }
+
+    setLang('en');
+  </script>
+</body>
+</html>
