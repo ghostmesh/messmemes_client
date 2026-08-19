@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MessMemes — Публичная оферта о добровольном пожертвовании</title>
+  <script src="config.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -41,14 +42,14 @@
     
     <h1>ПУБЛИЧНАЯ ОФЕРТА</h1>
     <p class="subtitle">о заключении договора дарения денежных средств и криптовалюты<br>(свободное дарение)</p>
-    <p class="updated">г. Москва · Дата: 19.08.2026</p>
+    <p class="updated" id="offer-meta">г. Москва · Дата: 19.08.2026</p>
 
     <h2>1. Термины и определения</h2>
-    <p><strong>1.1. Автор</strong> — Администрация MessMemes, физическое лицо, являющееся создателем и владельцем Сайта, разместившее настоящую Оферту.</p>
+    <p><strong>1.1. Автор</strong> — <span id="offer-author">Администрация MessMemes</span>, физическое лицо, являющееся создателем и владельцем Сайта, разместившее настоящую Оферту.</p>
     <p><strong>1.2. Жертвователь (Донатер)</strong> — дееспособное физическое лицо, осуществившее Акцепт Оферты.</p>
     <p><strong>1.3. Дар</strong> — денежные средства в любой форме (включая фиатные валюты и криптовалюты), добровольно и безвозмездно передаваемые Жертвователем Автору на условиях, изложенных в настоящей Оферте.</p>
     <p><strong>1.4. Криптовалюта</strong> — цифровой актив, передаваемый через блокчейн-сети, включая, но не ограничиваясь: Bitcoin (BTC), Ethereum (ETH), Tether (USDT), USD Coin (USDC), TON, Solana (SOL) и другие.</p>
-    <p><strong>1.5. Сайт</strong> — интернет-сайт, расположенный по адресу: <a href="https://ghostmesh.github.io/messmemes_client/" target="_blank">https://ghostmesh.github.io/messmemes_client/</a>.</p>
+    <p><strong>1.5. Сайт</strong> — интернет-сайт, расположенный по адресу: <a id="offer-site-link" href="https://ghostmesh.github.io/messmemes_client/" target="_blank">https://ghostmesh.github.io/messmemes_client/</a>.</p>
     <p><strong>1.6. Сервисы приёма платежей</strong> — платёжные сервисы (включая CloudTips, криптовалютные платёжные шлюзы, прямые переводы на криптокошельки), используемые в качестве технических посредников или способов перечисления Дара.</p>
     <p><strong>1.7. Акцепт Оферты</strong> — полное и безоговорочное принятие условий настоящей Оферты путём осуществления Жертвователем перевода Дара через любой из Сервисов приёма платежей или напрямую на криптокошелёк Автора.</p>
 
@@ -110,10 +111,10 @@
     <h2>7. Реквизиты Автора</h2>
     <div class="details-box">
       <p><strong>Для фиатных переводов:</strong></p>
-      <p>ФИО: Администрация MessMemes</p>
-      <p>ИНН: —</p>
-      <p>Адрес регистрации: Российская Федерация</p>
-      <p>Электронная почта: <a href="mailto:support@messmemes.com">support@messmemes.com</a></p>
+      <p>ФИО: <span id="offer-req-name">Администрация MessMemes</span></p>
+      <p>ИНН: <span id="offer-req-inn">—</span></p>
+      <p>Адрес регистрации: <span id="offer-req-addr">Российская Федерация</span></p>
+      <p>Электронная почта: <a id="offer-req-email" href="mailto:support@messmemes.com">support@messmemes.com</a></p>
       <p style="margin-top: 8px; opacity: 0.75;">Дары в фиатной валюте принимаются через платёжные сервисы по ссылкам, размещённым на Сайте.</p>
       <p style="margin-top: 8px; opacity: 0.75;">Для переводов в криптовалюте реквизиты публикуются на Сайте и обновляются Автором.</p>
     </div>

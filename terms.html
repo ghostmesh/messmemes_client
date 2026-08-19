@@ -38,6 +38,7 @@
     .lang-btn.active { background: rgba(247,151,30,0.2); border-color: #f7971e; color: #ffd200; }
     .lang-btn:hover { color: #fff; }
   </style>
+  <script src="config.js"></script>
 </head>
 <body>
   <div class="container">
@@ -92,7 +93,7 @@
   </div>
 
   <script>
-    const EMAIL_LEGAL = 'legal@messmemes.com';
+    const EMAIL_LEGAL = window.CONFIG?.emailLegal || 'legal@messmemes.com';
     
     const translations = {
       ru: {
