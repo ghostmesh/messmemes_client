@@ -1,8 +1,5 @@
 // client/public/config.js
 window.CONFIG = {
-  // Версия клиента
-  version: 'v2.6.0',
-
   // Контакты
   emailSupport: 'support@messmemes.com',
   emailLegal: 'legal@messmemes.com',
